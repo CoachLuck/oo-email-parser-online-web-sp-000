@@ -9,7 +9,7 @@ class EmailAddressParser
   end
 
   def parse
-     @list.split(/[,+\s||\s]/).reject {|x| x.isEmpty? }
+     @list.split(/[,+\s||\s]/).reject {|x| x.empty? }
   end
 
 end
