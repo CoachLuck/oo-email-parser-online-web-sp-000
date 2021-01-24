@@ -9,7 +9,7 @@ class EmailAddressParser
   end
 
   def parse
-     @list.split(/[, ]/)
+     @list.split(/[,+\s||\s]/)
   end
 
 end
